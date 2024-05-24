@@ -89,6 +89,7 @@ Value types are compared by their actual value.
 Reference types are compared by their reference (memory address), not by the content they store.
 
 -There are a handful of values in Javascript that return falsy values, they are:
+
 false
 0
 null
