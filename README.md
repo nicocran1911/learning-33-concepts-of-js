@@ -48,3 +48,46 @@ are used to store integers that too large to store us numbers. (ES2020).
 02/05/2024
 1. = means assignment operator.
 2. Pure functions these are function that donot affect anything outside their scope.
+
+
+3. ## Value types and Reference types (3)
+### Value Types (Primitive Types):
+Stored Directly: Value types are stored directly in the variable's memory location.
+Immutable: The value of a variable of a primitive type cannot be changed after it has been created.
+Examples: number, string, boolean, null, undefined, symbol.
+Examples in JavaScript:
+let num = 10;
+let name = 'John';
+let isActive = true;
+### Reference Types:
+Stored by Reference: Reference types are stored as a reference (or pointer) to a location in memory where the actual data is stored.
+Mutable: The content of a reference type variable can be changed after it has been created.
+Examples: object, array, function.
+Examples in JavaScript:
+let person = { name: 'Alice', age: 30 };
+let colors = ['red', 'green', 'blue'];
+function greet() { console.log('Hello!'); }
+Differences:
+Storage:
+Value types are stored directly in memory where the variable is allocated.
+Reference types are stored in memory heap, and variables store references to the memory location.
+Mutability:
+Value types are immutable, meaning their value cannot be changed after creation.
+Reference types are mutable, meaning their content can be changed after creation.
+Assignment Behavior:
+When assigning a value type to another variable, a copy of the value is created.
+When assigning a reference type to another variable, both variables point to the same object in memory.
+Comparison:
+Value types are compared by their actual value.
+Reference types are compared by their reference (memory address), not by the content they store.
+
+-There are a handful of values in Javascript that return falsy values, they are:
+false
+0
+null
+undefined
+""
+NaN
+-0
+**NaN** is the only Javascript value that is not equal to itself
+
